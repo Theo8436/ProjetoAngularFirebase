@@ -1,15 +1,15 @@
 <ion-content [fullscreen]="true">
-                
-         <ng-container *ngFor="let livro of this.livros">
-
-                <h1>{{ livro.titulo }}</h1>
-                <h1>{{ livro.titulo }}</h1>
-
-                <ng-container *ndFor="let categoria of this.livro.categoria">
-                        <marquee {{ categoria.nome }}></marquee>
-
-                </ng-container>
-
-         </ng-container>
+        
+        <table border="1">
+               <tr>
+                <td>
+                        <ng-container *ngFor="let produto of this.produtos">
+                                <td>{{ produto.nome }}</td>
+                                <td>{{ produto.validade }}</td>
+                                <td>{{ produto.lote }}</td>
+                        </ng-container>
+                </td>
+               </tr>
+        </table>
 
 </ion-content>>
