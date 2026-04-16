@@ -11,18 +11,28 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
-  pokemon:any = {
-    nome: null,
-    poder: null
+  pokemon: any = {
+    nome: '',
+    poder: ''
   };
 
-  constructor( 
+  enviado = false;
+
+  constructor(
     public crudService: CrudService
-  ){ }
+  ) {}
 
   enviar() {
+    if (!this.pokemon.nome || !this.pokemon.poder) {
+      return;
+    }
+
     this.crudService.insert(this.pokemon, 'pokemons');
+    this.enviado = true;
+    this.pokemon = {
+      nome: '',
+      poder: ''
+    };
   }
 
 }

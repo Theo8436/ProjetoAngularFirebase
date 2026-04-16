@@ -1,0 +1,47 @@
+ion-content {
+  --background: #f2f2f2;
+}
+ion-list,
+ion-item,
+input {
+
+    width: 90%;          /* diminui o tamanho da linha */
+  margin: 0 auto 15px;  /* centraliza */
+  --background: #f2f2f2;
+  background: #f2f2f2;
+  color:#02263b;
+}
+
+.titulo {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  color: #02263b;
+  margin-bottom: 40px;
+}
+
+ion-button {
+  width: 170px;
+  height: 42px;
+  --border-radius: 25px;
+  font-size: 16px;
+  display:block;
+  margin: 10px auto;
+}
+
+.login {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+ion-col:first-child img {
+  width: 85%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}

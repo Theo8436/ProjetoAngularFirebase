@@ -1,6 +1,41 @@
 <ion-content [fullscreen]="true">
 
-    <ion-button color="secondary">Teste</ion-button>
+   <ion-grid>
+  <ion-row class="ion-justify-content-center">
+    <ion-col><img src="https://images.pexels.com/photos/37075878/pexels-photo-37075878.jpeg"></ion-col>
+    <ion-col>
+       <ion-label class="titulo">Criar Conta</ion-label>
+            <ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-input label="Nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="E-mail"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Senha" type="password" value="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Confirmar Senha" type="password" value="password"></ion-input>
+    </ion-item>
+
+    <ion-button class="ion-margin-top" color="primary">criar conta</ion-button>
+
+</ion-list>
+<ion-label class="login"> Login com: </ion-label>
+<ion-button color="primary">facebook</ion-button>
+<ion-button color="blue">twitter</ion-button>
+<ion-button color="danger">google</ion-button>
+</ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
     
     
 </ion-content>
